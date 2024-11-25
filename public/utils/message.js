@@ -25,17 +25,15 @@ chatMessagesContainer.innerHTML += `
         "output_type": "chat",
         "input_type": "chat",
         "tweaks": {
-            "ChatInput-rUeJt": {},
-            "ChatOutput-D7DYU": {},
-            "ToolCallingAgent-RCdas": {},
-            "CalculatorTool-yclHV": {},
-            "APIRequestComponent-24DyP": {},
-            "CustomComponent-ddBtJ": {},
-            "OpenAIModel-xV9JM": {},
-            "APIRequestTool-OjPsz": {},
-            "FlowTool-NIyi9": {},
-            "Memory-A4NC8": {},
-            "beautifulsoup_scrape_api-ND6fC": {}
+            "ChatInput-MXnNC": {},
+            "ChatOutput-6Lneu": {},
+            "ToolCallingAgent-TOfxA": {},
+            "OpenAIModel-SwDOv": {},
+            "FlowTool-IghTO": {},
+            "CalculatorTool-t3Cuf": {},
+            "Memory-0LeS5": {},
+            "FlowTool-ZgIwn": {},
+            "CustomComponent-GPcvC": {}
         }
     });
 
@@ -47,7 +45,7 @@ chatMessagesContainer.innerHTML += `
     };
 
     try {
-        const response = await fetch("https://flow.ohanapal.bot/api/v1/run/7a876083-04f1-4ad5-9b54-db0df1d712bf?stream=false", requestOptions);
+        const response = await fetch("https://flow.ohanapal.bot/api/v1/run/5f3b57c2-4268-4f12-99c9-a48f31a5947b?stream=false", requestOptions);
         const result = await response.text();
         console.log(JSON.parse(result));
         const message = JSON.parse(result).outputs[0].outputs[0].results.message.text;
@@ -118,17 +116,15 @@ async function sendFirstMessage(message) {
             "output_type": "chat",
             "input_type": "chat",
             "tweaks": {
-                "ChatInput-rUeJt": {},
-                "ChatOutput-D7DYU": {},
-                "ToolCallingAgent-RCdas": {},
-                "CalculatorTool-yclHV": {},
-                "APIRequestComponent-24DyP": {},
-                "CustomComponent-ddBtJ": {},
-                "OpenAIModel-xV9JM": {},
-                "APIRequestTool-OjPsz": {},
-                "FlowTool-NIyi9": {},
-                "Memory-A4NC8": {},
-                "beautifulsoup_scrape_api-ND6fC": {}
+                "ChatInput-MXnNC": {},
+                "ChatOutput-6Lneu": {},
+                "ToolCallingAgent-TOfxA": {},
+                "OpenAIModel-SwDOv": {},
+                "FlowTool-IghTO": {},
+                "CalculatorTool-t3Cuf": {},
+                "Memory-0LeS5": {},
+                "FlowTool-ZgIwn": {},
+                "CustomComponent-GPcvC": {}
             }
         });
     
@@ -140,7 +136,7 @@ async function sendFirstMessage(message) {
         };
     
         try {
-            const response = await fetch("https://flow.ohanapal.bot/api/v1/run/7a876083-04f1-4ad5-9b54-db0df1d712bf?stream=false", requestOptions);
+            const response = await fetch("https://flow.ohanapal.bot/api/v1/run/5f3b57c2-4268-4f12-99c9-a48f31a5947b?stream=false", requestOptions);
             const result = await response.text();
             console.log(JSON.parse(result));
             const message = JSON.parse(result).outputs[0].outputs[0].results.message.text;
